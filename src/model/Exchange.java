@@ -2,8 +2,8 @@ package model;
 
 public class Exchange {
     
-    private Money money;
-    private Currency currency;
+    private final Money money;
+    private final Currency currency;
 
     public Exchange(Money money, Currency currency) {
         this.money = money;
@@ -17,4 +17,10 @@ public class Exchange {
     public Currency getCurrency() {
         return currency;
     }
+
+    @Override
+    public String toString() {
+        return money + " " + money.getCurrency(); 
+    }
+    
 }

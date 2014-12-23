@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package persistence;
 
-/**
- *
- * @author usuario
- */
+import model.Currency;
+import model.ExchangeRate;
+
 public class ExchangeRateLoader {
     
+    private final ExchangeRate exchangeRate;
+
+    public ExchangeRateLoader(Currency from, Currency to, double rate) {
+        this.exchangeRate = new ExchangeRate(from,to,rate);
+    }
+    public void load(){
+    }
 }

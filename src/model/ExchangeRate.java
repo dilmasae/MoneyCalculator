@@ -1,22 +1,22 @@
 package model;
 
 public class ExchangeRate {
-    private Currency from;
-    private Currency to;
-    private double rate;
+    private final Currency fromCurrency;
+    private final Currency toCurrency;
+    private final double rate;
 
-    public ExchangeRate(Currency from, Currency to, double rate) {
-        this.from = from;
-        this.to = to;
+    public ExchangeRate(Currency fromCurrency, Currency toCurrency, double rate) {
+        this.fromCurrency = fromCurrency;
+        this.toCurrency = toCurrency;
         this.rate = rate;
     }
 
-    public Currency getFrom() {
-        return from;
+    public Currency getFromCurrency() {
+        return fromCurrency;
     }
 
-    public Currency getTo() {
-        return to;
+    public Currency getToCurrency() {
+        return toCurrency;
     }
 
     public double getRate() {

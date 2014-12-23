@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package application;
 
-/**
- *
- * @author usuario
- */
+import model.Currency;
+import model.CurrencySet;
+
 public class Application {
+    public static void main(String[] args) {
+        
+        Currency euro = new Currency("EUR", "EURO", "€");
+        Currency dolar = new Currency("USD", "DOLAR", "$");
+        
+        CurrencySet set = new CurrencySet();
+        set.add(euro);
+        set.add(dolar);
+        
+        for (Currency set1 : set) {
+            System.out.println(set1);
+        }
+        
+    }
     
 }
