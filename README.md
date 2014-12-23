@@ -1,13 +1,12 @@
 Money Calculator
 ===============
-<p> Probando el Exchanger </p>
-<hr/>
+<h3> Pruebas  </h3> 
+<ul>
+   <li> Probando el Exchanger </li>
+   <li> Probando el ExchangeRateMock </li>
+   <li> Probando CurrencyLoaderMock </li>
+</ul>
 
-<p> Probando el ExchangeRateMock</p>
-<hr/>
-
-<p> Probando el CurrencyLoaderMock</p>
-<hr/>
 
 <p> Modelo acabado</p>
 <hr/>
