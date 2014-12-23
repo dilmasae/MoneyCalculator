@@ -1,21 +1,19 @@
 package application;
 
+import mock.CurrencySetLoaderMock;
 import model.Currency;
 import model.CurrencySet;
+import persistence.CurrencySetLoader;
 
 public class Application {
     public static void main(String[] args) {
-        
-        Currency euro = new Currency("EUR", "EURO", "€");
-        Currency dolar = new Currency("USD", "DOLAR", "$");
-        
-        CurrencySet set = new CurrencySet();
-        set.add(euro);
-        set.add(dolar);
-        
+      
+        CurrencySetLoaderMock mock = new CurrencySetLoaderMock();
+        CurrencySet set = mock.loadCurrencySet();
         for (Currency set1 : set) {
             System.out.println(set1);
         }
+        
         
     }
     
