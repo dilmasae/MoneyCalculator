@@ -5,13 +5,10 @@ Money Calculator
    <li> Probando el Exchanger </li>
    <li> Probando el ExchangeRateMock </li>
    <li> Probando CurrencyLoaderMock </li>
+   <li> Modelo acabado</li>
+   <li> Implementacion de las clases del modelo</li>
 </ul>
 
-
-<p> Modelo acabado</p>
-<hr/>
-
-<p> Implementacion de las clases del modelo</p>
 <hr/>
 
 <h3> Creacion de los paquetes </h3>
@@ -24,3 +21,4 @@ Money Calculator
    <li> Control</li>
    <li> Application</li>
 </ul>
+<hr/>
