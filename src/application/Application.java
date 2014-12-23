@@ -1,18 +1,18 @@
 package application;
 
-import mock.CurrencySetLoaderMock;
+import mock.EchangeRateLoaderMock;
 import model.Currency;
-import model.CurrencySet;
-import persistence.CurrencySetLoader;
+import model.ExchangeRate;
 
 public class Application {
     public static void main(String[] args) {
       
-        CurrencySetLoaderMock mock = new CurrencySetLoaderMock();
-        CurrencySet set = mock.loadCurrencySet();
-        for (Currency set1 : set) {
-            System.out.println(set1);
-        }
+        EchangeRateLoaderMock mock = new EchangeRateLoaderMock();
+        
+        ExchangeRate exchangeMock = mock.load(new Currency("USD", "DOLAR", "$"),
+                new Currency("EUR", "EURO", "€"));
+        
+        System.out.println(exchangeMock.getRate());
         
         
     }

@@ -22,4 +22,8 @@ public class ExchangeRate {
     public double getRate() {
         return rate;
     }
+    
+    public String toString(){
+        return Double.toString(rate);
+    }
 }
