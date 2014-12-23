@@ -15,7 +15,7 @@ Money Calculator
 <p> Implementacion de las clases del modelo</p>
 <hr/>
 
-<h3> Creacion de los paquetes </h3>
+<h2> Creacion de los paquetes </h2>
 <ul>
    <li> Model</li>
    <li> Persistence</li>
