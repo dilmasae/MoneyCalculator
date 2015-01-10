@@ -20,4 +20,9 @@ public class CurrencySet extends HashSet<Currency> implements Iterable<Currency>
     public boolean remove(Currency currency) {
         return super.remove(currency);
     } 
+
+
+    public Currency[] getItems() {
+        return this.toArray(new Currency[this.size()]);
+    }
 }

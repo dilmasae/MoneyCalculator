@@ -5,7 +5,7 @@ import model.CurrencySet;
 import persistence.CurrencySetLoader;
 
 public class CurrencySetLoaderMock implements CurrencySetLoader {
-
+   
     @Override
     public CurrencySet loadCurrencySet() {
 
@@ -16,5 +16,5 @@ public class CurrencySetLoaderMock implements CurrencySetLoader {
         return currencySet;
         
     }
-    
+ 
 }

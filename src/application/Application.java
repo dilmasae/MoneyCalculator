@@ -1,20 +1,28 @@
 package application;
 
-import mock.EchangeRateLoaderMock;
-import model.Currency;
-import model.ExchangeRate;
-import model.Money;
-import process.Exchanger;
+import control.ExchangeOperator;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import mock.CurrencySetLoaderMock;
+import model.CurrencySet;
+import swing.ApplicationFrame;
 
 public class Application {
     public static void main(String[] args) {
         
-        ExchangeRate exchangeRate = new EchangeRateLoaderMock().load(new Currency("EUR", "EURO", "€"), 
-                new Currency("USD", "DOLAR", "$"));
-      
-        Money money = Exchanger.exchanceRate(new Money(1.2, new Currency("EUR", "EURO", "€")), 
-                exchangeRate);
-        System.out.println(money);
+        
+        CurrencySetLoaderMock currencySetMock = new CurrencySetLoaderMock(); 
+        CurrencySet currencySet = currencySetMock.loadCurrencySet();
+        ApplicationFrame frame = new ApplicationFrame(currencySet);
+        
+        frame.register("Calcular", new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent event) {
+                new ExchangeOperator(frame.getDialog()).execute();
+            }
+            
+        });
+       
     }
     
 }

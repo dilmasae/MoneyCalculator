@@ -1,5 +1,8 @@
 package userinterface;
 
-public class ExchangeDialog {
-    
+import model.Exchange;
+
+public interface ExchangeDialog {
+   
+    public Exchange getExchange(); 
 }
