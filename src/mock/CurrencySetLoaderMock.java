@@ -13,8 +13,6 @@ public class CurrencySetLoaderMock implements CurrencySetLoader {
         currencySet.add(new Currency("EUR", "EURO", "€"));
         currencySet.add(new Currency ("USD", "DOLAR", "$"));
         
-        return currencySet;
-        
+        return currencySet;   
     }
- 
 }

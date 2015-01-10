@@ -14,7 +14,7 @@ import userinterface.ExchangeDialog;
 public class ApplicationFrame extends JFrame {
     
     private final CurrencySet currencySet;
-    private Map<String,ActionListener> listeners;
+    private final Map<String,ActionListener> listeners;
     private ExchangeDialog exchangeDialog;
 
     public ApplicationFrame(CurrencySet currencySet) {

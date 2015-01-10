@@ -1,5 +1,10 @@
 package control;
 
+import javax.swing.JOptionPane;
+import model.ExchangeRate;
+import model.Money;
+import process.Exchanger;
+import sqlite.SqliteConnection;
 import userinterface.ExchangeDialog;
 
 public class ExchangeOperator {
@@ -10,10 +15,14 @@ public class ExchangeOperator {
         this.dialog = dialog;
     }
 
-    public void execute() {
-        System.out.println(dialog.getExchange().getMoney().getAmount());
-        System.out.println(dialog.getExchange().getMoney().getCurrency().getCode());
-        System.out.println(dialog.getExchange().getCurrency().getCode());
+    public void execute( SqliteConnection sqlite) {
+        
+        ExchangeRate exchangeRate = sqlite.getExchangeRate(
+                dialog.getExchange().getMoney().getCurrency(), 
+                dialog.getExchange().getCurrency());
+        
+        Money money = Exchanger.exchanceRate(dialog.getExchange().getMoney(), exchangeRate);
+        
+        JOptionPane.showMessageDialog(null, money); 
     }
-
 }

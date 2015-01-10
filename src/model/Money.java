@@ -22,7 +22,4 @@ public class Money {
     public String toString() {
         return amount + " " + currency;
     }
-    
-    
-
 }

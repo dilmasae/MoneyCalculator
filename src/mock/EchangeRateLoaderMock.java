@@ -11,6 +11,5 @@ public class EchangeRateLoaderMock implements ExchangeRateLoader {
         if(fromCurrency.getCode().equals("EUR")) 
             return new ExchangeRate(fromCurrency, toCurrency, 1.2);
         else return new ExchangeRate(fromCurrency, toCurrency, 1.9);
-    }
-    
+    } 
 }
