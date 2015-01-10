@@ -1,5 +1,18 @@
 Money Calculator
 ===============
+<h3> Implementación de Swing </h3> 
+<ul>
+   <li> Clase ApplicationFrame </li>
+   <li> Clase ExchangeDialogPanel </li>
+</ul>
+<hr/>
+
+<h3> Implementación del Controlador </h3> 
+<ul>
+   <li> Clase ExchangerOperator</li>
+</ul>
+<hr/>
+
 <h3> Pruebas  </h3> 
 <ul>
    <li> Probando el Exchanger </li>
