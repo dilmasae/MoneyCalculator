@@ -1,6 +1,11 @@
 Money Calculator
 ===============
 
+<h3> Finalización de MoneyCalculator </h3> 
+
+<hr/>
+
+
 <h3> Conexión con SQlite </h3> 
 <ul>
    <li> Creación del paquete sqlite  </li>
