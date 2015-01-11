@@ -1,5 +1,15 @@
 Money Calculator
 ===============
+
+<h3> Conexión con SQlite </h3> 
+<ul>
+   <li> Creación del paquete sqlite  </li>
+   <li> Implemenatción de clase SqliteConnection </li>
+</ul>
+<hr/>
+
+
+
 <h3> Implementación de Swing </h3> 
 <ul>
    <li> Clase ApplicationFrame </li>
